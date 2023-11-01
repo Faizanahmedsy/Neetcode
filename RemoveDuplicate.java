@@ -6,14 +6,13 @@ import java.util.Set;
 class RemoveDuplicate {
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4,5,6,8};
-        RemoveDuplicate remover = new RemoveDuplicate();
-        boolean hasDuplicates = remover.containsDuplicate(nums);
-        System.out.println("Conatins Duplicates: " + hasDuplicates );
+        int[] nums = { 1, 2, 3, 4, 5, 6, 8 };
+        boolean hasDuplicates = RemoveDuplicate.containsDuplicate(nums);
+        System.out.println("Conatins Duplicates: " + hasDuplicates);
 
     }
 
-    public boolean containsDuplicate(int[] nums) {
+    public static boolean containsDuplicate(int[] nums) {
         Set<Integer> numSet = new HashSet<>();
 
         for (int num : nums) {
